@@ -16,7 +16,6 @@ const style = {
 
 Language.propTypes = {
   name: PropTypes.string.isRequired,
-  proficiency: PropTypes.number.isRequired,
 };
 
 export default Language;

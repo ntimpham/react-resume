@@ -13,7 +13,7 @@ const Header = ({ firstName, lastName, program, website }) => {
         <span style={style.span}>{lastName.toUpperCase()}</span>
       </h1>
       <span style={style.program}>
-        {term} {nickname} | <Link to={website.link} style={{padding: 0}}>{website.name}</Link>
+        {term} {nickname}
       </span>
     </section>
   );
@@ -30,18 +30,25 @@ const style = {
   },
   h1: {
     color: 'rgb(21, 44, 85)',
-    display: 'block',
-    fontSize: '3.4rem',
+    display: 'inline-block',
+    fontSize: '5rem',
   },
   program: {
-    fontSize: '1.2rem',
-    display: 'block',
-    marginLeft: '5px',
+    fontSize: '1.55rem',
+    fontWeight: 'bold',
+    display: 'inline-block',
+    marginLeft: '10px',
     marginTop: '-6px',
     color: 'rgb(77, 100, 141)'
   },
   span: {
     display: 'inline-block',
+  },
+  zh: {
+    position: 'relative',
+    width: '335px',
+    bottom: '-25px',
+    right: '-12px'
   }
 };
 

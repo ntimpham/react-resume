@@ -9,7 +9,7 @@ const CompanyHeading = ({ style, company, title, date, location }) => (
       </div>
     </div>
     <div style={defaultStyles.locationdate}>
-      { date + ' | ' + location }
+      { date }
     </div>
   </div>
 );

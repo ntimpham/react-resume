@@ -24,51 +24,46 @@ const DATA = {
   sidebar: {
     education: {
       university: 'University of Waterloo',
-      duration: 'Sept 2013 - now',
-      degree: 'Bachelor of Software Engineering'
+      duration: 'September 2013 \u2014 Present',
+      degree: 'Bachelor of Computer Science'
     },
     languages: [{
-      name: 'JavaScript',
-      proficiency: 0.8,
+      name: 'JavaScript'
+    },  {
+      name: 'Java'
     }, {
-      name: 'HTML/CSS',
-      proficiency: 0.4,
+      name: 'Scala'
+    },{
+      name: 'C++'
     }, {
-      name: 'Scala',
-      proficiency: 0.6,
+      name: 'C'
     }, {
-      name: 'Python',
-      proficiency: 0.6,
+      name: 'HTML/CSS'
     }, {
-      name: 'Java',
-      proficiency: 0.6,
-    }, {
-      name: 'C++',
-      proficiency: 0.6,
-    }, {
-      name: 'BASH',
-      proficiency: 0.3,
+      name: 'BASH'
     }],
     databases: [
       'MongoDB',
       'PostgreSQL',
-      'MySQL'
+      'Oracle',
+      'DB2'
     ],
     libraries: [
+      'Node.js',
       'React',
       'React Native',
       'Redux',
-      'Immutable',
-      'Node.js',
-      'Express',
-      'Koa',
-      'Django',
       'Angular',
-      'Mocha',
+      'Play',
       'jQuery',
-      'Meteor',
+      'Grails',
+      'Spring MVC',
+      'Protractor',
+      'Jasmine',
+      'ScalaTest',
+      'Hibernate',
+      'JavaScriptMVC',
       'Sass',
-      'Android SDK'
     ],
     tools: [
       'Unix',
@@ -76,121 +71,130 @@ const DATA = {
       'Webpack',
       'Gulp',
       'Grunt',
-      'Browserify',
-      'AWS',
-      'Docker'
+      'SonarQube',
     ],
     interests: [
-      'I <b>learn</b> about web, data science, and, algorithms.',
-      'I <b>dominate</b> in badminton, ping pong, League of Legends, and Tetris.',
-      'I <b>love</b> tacos, anime, bubble tea, fitness, tourism, and team players.',
-      'I <b>hate</b> doing planks.'
+      'I <b>live</b> to create, collaborate, and innovate.',
+      'I <b>explore</b> the beauty of architectures, designs, and business models.',
+      'I <b>synergize</b> with others in order to bring out the best in everyone.',
+      'I <b>strive</b> to learn and grow from failure and success.'
     ],
     links: [{
       name: 'Phone',
       faClass: 'fa fa-phone',
-      display: '647 571 9781',
-      link: 'tel:+16475719781',
+      display: '613 808 7667',
+      link: 'tel:+16138087667',
     }, {
       name: 'Email',
       faClass: 'fa fa-envelope',
-      display: 'c8hoang@uwaterloo.ca',
-      link: 'mailto:c8hoang@uwaterloo.ca',
+      display: 'tim.pham@uwaterloo.ca',
+      link: 'mailto:tim.pham@uwaterloo.ca',
     }, {
       name: 'GitHub',
       faClass: 'fa fa-github',
-      display: 'github.com/clemmy',
-      link: 'https://github.com/clemmy',
+      display: 'github.com/ntimpham',
+      link: 'https://github.com/ntimpham',
+    }, {
+      name: 'Linkedin',
+      faClass: 'fa fa-linkedin',
+      display: 'linkedin.com/in/ntimpham',
+      link: 'https://www.linkedin.com/in/ntimpham',
     }],
   },
-  footerLinks: [{
-    name: 'Website',
-    faClass: 'fa fa-fire',
-    display: 'clemmy.ninja',
-    link: 'http://clemmy.ninja',
-  }, {
-    name: 'Blog',
-    faClass: 'fa fa-book',
-    display: 'blog.clementhoang.net',
-    link: 'http://blog.clementhoang.net',
-  }, {
-    name: 'Linkedin',
-    faClass: 'fa fa-linkedin',
-    display: 'linkedin.com/in/clementhoang',
-    link: 'https://www.linkedin.com/in/clementhoang',
-  }],
   main: {
-    firstName: 'Clement',
-    lastName: 'Hoang',
+    firstName: 'Tim',
+    lastName: 'Pham',
     program: {
       term: '3B',
-      nickname: 'Software Engineering',
-      name: 'Software Engineering',
-    },
-    website: {
-      name: 'clemmy.ninja',
-      link: 'http://clemmy.ninja'
+      nickname: 'Computer Science',
+      name: 'Computer Science',
     },
     companies: [{
-      name: 'Zenreach',
-      title: 'Front-end Developer',
-      color: 'rgb(77, 100, 141)',
+      name: 'Radialpoint by AppDirect',
+      title: 'Web Application Developer',
+      color: 'rgb(32, 66, 135)',
       date: 'Spring 2016',
-      location: 'San Francisco',
+      location: 'Montreal',
       achievements: [
-        'Worked on customer dashboard with drag & drop email composer, hotspot landing page customization, and customer management using <b>React</b> with a <b>Django</b> backend',
-        'Improved the stability of <b><a href="https://github.com/quilljs/quill/releases/tag/v1.0.0-beta.8">Quill</a></b>, an open-sourced WYSIWG editor written in <b>ES6</b>, with over <b>10k</b> stars on Github',
-        'Built interactive visualization tool for customer email client data, made insights, and improved product browser coverage to over <b>99%</b>',
-        'Added event tracking infrastructure throughout the customer dashboard and performed behavioural analytics with <b>Amplitude</b>'
+        'Developed Angular pages and widgets for customers of large ISP companies',
+        'Owned and supported legacy JavaScript and JavaScriptMVC applications',
+        'Designed and implemented end-to-end testing with Jasmine and Protractor'
       ],
     }, {
-      name: 'Datera',
-      color: 'rgb(77, 100, 141)',
-      title: 'Full Stack JavaScript Developer',
+      name: 'Mitel Networks',
+      color: 'rgb(32, 66, 135)',
+      title: 'R&D Software Feature Developer',
       date: 'Fall 2015',
-      location: 'Mountain View',
+      location: 'Ottawa',
       achievements: [
-        'Successfully led a development team into building an interactive API explorer with autogenerated documentation, similar to POSTMAN, using <b>Angular</b>',
-        'Worked with the team to implement features and fix faults for an administrative application that allows users to view and configure distributed storage systems through iSCSI LUNS with <b>Node.js</b>',
-        'Added core features to an in-house <b>Javascript</b> SPA framework including duplex streams for model access and <b>React</b> support',
-        // 'Collaborated with client engineers to implement a CLI for interacting with the distributed system',
-        'Reduced JS bundle size by over <b>50%</b> by de-duplicating the dependency tree'
+        'Delivered features and fixes for Java-based enterprise software',
+        'Independently researched and documented information for business decisions',
+        'Coordinated with multiple groups worldwide to produce excellent code/products'
       ],
     }, {
-      name: 'Ten Thousand Coffees',
-      title: 'Software Engineering Intern',
-      color: 'rgb(77, 100, 141)',
+      name: 'Canadian Blood Services',
+      title: 'Enterprise Software Developer',
+      color: 'rgb(32, 66, 135)',
       date: 'Winter 2015',
-      location: 'Toronto',
+      location: 'Ottawa',
       achievements: [
-        'Re-architected the entire messaging system to support multiple participants and an user-friendly scheduling system using the <b>MEAN</b> stack',
-        'Improved user retention on platform by <b>20%</b> using Mandrill for transactional and digest emails by running A/B tests with KissMetrics',
-        'Added internationalization support for the entire application with angular-translate',
+        'Developed Grails and Spring MVC web applications for business systems',
+        'Optimized data querying to reduce web page load times from minutes to seconds',
+        'Prepared and executed DB2-Oracle database migrations for major applications'
+      ]
+    }, {
+      name: 'Agriculture and Agri-Food Canada',
+      title: 'Verification Specialist',
+      color: 'rgb(32, 66, 135)',
+      date: 'Spring 2014',
+      location: 'Ottawa',
+      achievements: [
+        'Knowledgeable of several recognized web standards such as WCAG 2.0',
+        'Devised and performed thorough application assessments for quality assurance',
+        'Designed load tests in JMeter to analyze network stability and performance'
+      ]
+    }, {
+      name: 'CIRA.ca',
+      title: 'Software Developer',
+      color: 'rgb(32, 66, 135)',
+      date: 'Summer 2013',
+      location: 'Ottawa',
+      achievements: [
+        'Efficiently applied popular technologies to produce robust web applications',
+        'Collaborated with team to plan, execute, and review customer\'s specifications',
+        'Organized development environments for version control and peer evaluation'
       ]
     }],
     projects: [{
-      name: 'Vio',
-      tools: ['React', 'Redux', 'ES6', 'Go', 'PostgreSQL', 'Google Cloud'],
-      link: 'https://github.com/jasonf7/memories-of-harambe',
+      name: 'Zoo House \u2014 Co-Founder',
+      tools: [''],
+      link: 'http://www.ZooHouse.io/',
       achievements: [
-        'Built a mobile-friendly web application that allows users to film location-based video diaries with sentimental analysis.'
+        'Help others build websites, mobile apps, and everything in between.',
+        'Grow novel ideas into tangible, functional realities.'
+      ]
+    },
+    {
+      name: 'Squad',
+      tools: ['React Native', 'Redux', 'Immutable'],
+      link: '',
+      achievements: [
+        'Android and iOS app built with React Native',
+        'Allows close friends and roommates to stay connected',
+        'Enables group activities by simplifying scheduling, polling, and event planning'
       ]
     }, {
-      name: 'Coastline Market',
-      tools: ['MongoDB', 'Angular', 'Node.js', 'ES7', 'Express', 'AWS'],
-      link: 'http://www.coastlinemarket.com',
+      name: 'Hatch',
+      tools: ['Express', 'Jade', 'MongoDB', 'Node.js', 'GoJS'],
+      link: 'https://github.com/ntimpham/rp-agent-learning',
       achievements: [
-        'Worked with a small team to build a startup that solves a lot of the fishing industry\'s pain points. The product includes e-commerce for fishing as well as inventory management software as a service.'
-      ],
-    }, {
-      name: 'Query',
-      tools: ['Socket.io', 'Express', 'Angular', 'Clusterpoint', 'Pebble'],
-      link: 'http://queryhacks.herokuapp.com',
-      achievements: [
-        'Built a pebble and web application that lets users ask questions anonymously during lectures in a classroom environment in real time that won HackingEDU 2015\'s best Clusterpoint Hack award',
-      ],
+        'Agent training web tool developed at Radialpoint Hackathon',
+        'Drag-and-drop interface to create learning modules for agents',
+        'Agent performance tracking and statistics for trainers'
+      ]
     }],
   },
+  footerLinks: []
 };
 
 export default Resume;

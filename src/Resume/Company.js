@@ -6,7 +6,7 @@ import Section from '../ui/Section';
 
 const Company = ({ color, name, title, projects = [], achievements = [], date, location }) => {
   return (
-    <div>
+    <div style={{padding: '0.25rem 0'}}>
       <CompanyHeading company={name} title={title} date={date} location={location} style={{
         paddingLeft: '0.5rem',
       }}/>

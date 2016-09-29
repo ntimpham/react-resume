@@ -10,18 +10,20 @@ import Identity from './Identity';
 
 const Main = ({ firstName, lastName, program, companies, projects }) => (
   <section style={style.main}>
-    <MainHeading title="+ Work Experience" />
+    <MainHeading title="Work Experience" faClass="fa fa-briefcase" />
     <Companies data={companies} />
-    <MainHeading title="+ Projects" />
+    <MainHeading title="Ventures" faClass="fa fa-wrench" />
       {projects.map((project, key) => (
-        <Section color="rgb(77, 100, 141)" key={key}>
-          <Project
-            name={project.name}
-            tools={project.tools}
-            achievements={project.achievements}
-            link={project.link}
-            key={key} />
-        </Section>
+        <div style={{padding: '0.75rem 0'}}>
+          <Section color="rgb(77, 100, 141)" key={key}>
+            <Project
+              name={project.name}
+              tools={project.tools}
+              achievements={project.achievements}
+              link={project.link}
+              key={key} />
+          </Section>
+        </div>
       ))}
   </section>
 );

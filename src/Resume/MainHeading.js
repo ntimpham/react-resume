@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 
-const MainHeading = ({ title }) => (
-  <h1 style={style.main}>{title.toUpperCase()}</h1>
+const MainHeading = ({ title, faClass }) => (
+  <h1 style={style.main}><i className={faClass}></i> {title.toUpperCase()}</h1>
 );
 
 const style = {
